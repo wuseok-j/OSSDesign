@@ -1,2 +1,0 @@
-# OSSDesign
-OSS project
