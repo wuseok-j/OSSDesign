@@ -1,5 +1,5 @@
 
-![System Context Diagram](https://github.com/wuseok-j/OSSDesign/blob/main/ALARM.png?raw=true)
+![System Context Diagram](images/ALARM.png)
 | 항목 (Category) | 내용 (Details) |
 | :--- | :--- |
 | **학번 (Student No.)** | 22212020  |
@@ -25,7 +25,7 @@
 ---
 
 ## 1. Business purpose
-![System Context Diagram](https://github.com/wuseok-j/OSSDesign/blob/main/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C.png?raw=true)  
+![System Context Diagram](images/다운로드.png)  
 [그림 1] 일반적인 알람 시스템  
 
 1)Project background & motivation  
@@ -46,7 +46,7 @@
 
 ## 2. System context diagram  
 
-![Context Diagram](https://github.com/wuseok-j/OSSDesign/blob/main/alaram.png?raw=true)
+![Context Diagram](images/alaram.png)
 | 항목 (Category) | 내용 (Details) |
 | :--- | :--- |
 | **Register** | 회원가입  |
