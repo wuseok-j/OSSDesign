@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5442ff3c-e028-4a56-8a6e-46cef3ba9eef" name="Changes" comment="" />
+    <list default="true" id="5442ff3c-e028-4a56-8a6e-46cef3ba9eef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core/theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/alarm_setup/set_alarm_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/alarm_setup/set_alarm_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/auth/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/auth/login_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +22,13 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="3ES5qdsJMukjpuLMesuO6RV0Fmn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,14 +36,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Flutter.main.dart.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "io.flutter.project.isFirstOpen": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/HP/OneDrive/바탕 화면/alram dungeon/frontend",
     "settings.editor.selected.configurable": "AndroidSdkUpdater",
     "show.migrate.to.gradle.popup": "false"
   }

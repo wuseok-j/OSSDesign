@@ -23,7 +23,7 @@ class SuccessScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 16),
               const Text(
-                '아침을 깨우는 데 성공하셨습니다!\n경험치 +50 EXP\n골드 +100 G',
+                '아침을 깨우는 데 성공하셨습니다!\n경험치 +50 EXP',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 18, color: Colors.white),
               ),
@@ -31,8 +31,8 @@ class SuccessScreen extends ConsumerWidget {
               ElevatedButton(
                 onPressed: () {
                   // 전투 상태 초기화 및 홈으로 이동
-                  ref.read(battleProvider.notifier).resetBattle(100);
-                  Navigator.pushReplacementNamed(context, '/home');
+                  ref.read(battleProvider.notifier).resetBattle('쉬움');
+                  Navigator.pushNamedAndRemoveUntil(context, '/home', (route) => false);
                 },
                 child: const Text('마을(홈)로 돌아가기'),
               ),

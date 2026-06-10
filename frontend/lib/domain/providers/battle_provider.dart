@@ -1,29 +1,32 @@
+import 'dart:math';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../models/monster_model.dart';
 
-// 몬스터의 상태를 나타내는 클래스
 class MonsterState {
-  final int maxHp;
+  final MonsterModel monster;
   final int currentHp;
   final bool isDefeated;
 
   MonsterState({
-    required this.maxHp,
+    required this.monster,
     required this.currentHp,
     this.isDefeated = false,
   });
 
-  MonsterState copyWith({int? currentHp, bool? isDefeated}) {
+  MonsterState copyWith({int? currentHp, bool? isDefeated, MonsterModel? monster}) {
     return MonsterState(
-      maxHp: maxHp,
+      monster: monster ?? this.monster,
       currentHp: currentHp ?? this.currentHp,
       isDefeated: isDefeated ?? this.isDefeated,
     );
   }
 }
 
-// 몬스터의 체력과 전투 로직을 관리하는 Provider
 class BattleNotifier extends StateNotifier<MonsterState> {
-  BattleNotifier() : super(MonsterState(maxHp: 100, currentHp: 100));
+  BattleNotifier() : super(MonsterState(
+    monster: MonsterDictionary.snoozeDevil,
+    currentHp: MonsterDictionary.snoozeDevil.maxHp,
+  ));
 
   void attack(int damage) {
     if (state.isDefeated) return;
@@ -36,8 +39,32 @@ class BattleNotifier extends StateNotifier<MonsterState> {
     }
   }
 
-  void resetBattle(int newMaxHp) {
-    state = MonsterState(maxHp: newMaxHp, currentHp: newMaxHp);
+  void resetBattle(String difficulty) {
+    MonsterModel selectedMonster;
+    final random = Random();
+
+    switch (difficulty) {
+      case '쉬움':
+        selectedMonster = MonsterDictionary.snoozeDevil;
+        break;
+      case '보통':
+        selectedMonster = random.nextBool() 
+            ? MonsterDictionary.sleepFogCreeper 
+            : MonsterDictionary.duvetHellSlime;
+        break;
+      case '어려움':
+      case '지옥': // just in case
+        selectedMonster = MonsterDictionary.secondSleepSummoner;
+        break;
+      default:
+        selectedMonster = MonsterDictionary.snoozeDevil;
+    }
+
+    state = MonsterState(
+      monster: selectedMonster,
+      currentHp: selectedMonster.maxHp,
+      isDefeated: false,
+    );
   }
 }
 
